@@ -1,13 +1,1 @@
 
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^taylorsheckells\.com$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.taylorsheckells\.com$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
-RewriteRule ^/?$ "http\:\/\/portfolio\.taylorsheckells\.com\/" [R=301,L]
-RewriteCond %{HTTP_HOST} ^taylorsheckells\.com$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.taylorsheckells\.com$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
-RewriteRule ^public_html$ "http\:\/\/portfolio\.taylorsheckells\.com\/" [R=301,L]
-
